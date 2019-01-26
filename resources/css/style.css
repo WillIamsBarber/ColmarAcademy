@@ -6,11 +6,13 @@ html {
   font-family: Montserrat, Lato, sans-serif;
 }
 
+
+
 /*Header Styles*/
 .pageheader {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 1600;
   height: 4rem;
   justify-content: space-between;
   background-color: #fffff0;
@@ -43,6 +45,27 @@ html {
 .blue {
   background-color: #48d1cc;
   width: 1rem;
+}
+.hidden-menu {
+  display:none;
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .hidden-menu {
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    height: 4rem;
+  }
+  .hidden-menu img{
+    height: 3.5rem;
+  }
 }
 
 
@@ -82,6 +105,38 @@ button {
   margin-top:2rem;
   border-radius: 0.5rem;
   font-size: 2rem;
+}
+button:hover {
+  background-color:#48d1cc;
+}
+.read-link a:hover {
+  color:#48d1cc;
+}
+@media only screen and (max-width: 480px) {
+  .banner-image-container {
+    display: none;
+  }
+  .banner-text-container {
+    width:100%;
+  }
+  button {
+    width:95%;
+    margin: 1.5rem 0;
+    background-color: #a9a9a9;
+  }
+
+  .first h1{
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    line-height: 3rem;
+  }
+  .first {
+    padding-left: 1rem;
+  }
+  .first h2 {
+    margin: 0;
+    font-weight: bold;
+  }
 }
 
 /* Banner Main Information Styles*/
@@ -135,16 +190,46 @@ button {
   border-bottom: 1px solid #d3d3d3;
   margin-bottom: 0.5rem;
   width:100%;
-
 }
 .campus {
   border-top: 1px solid #d3d3d3;
-
 }
 .second {
   margin-top:1rem;
 }
+.mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 480px) {
+  .laptop {
+    display:none;
+  }
+  .mobile {
+    display: block;
+  }
+  .info-container {
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0 1rem 4rem 1rem;
+  }
+  .info-container img{
+    width: 100%;
+  }
+  .info-text {
+    padding: 1rem 0 0 1rem;
+  }
+  .guest {
+    background-color: #fffff0;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 2rem;
+  }
+  .date, .campus {
+    border-style: none;
+  }
+}
 
 /*Course Styles*/
 .learning {
@@ -195,6 +280,35 @@ button {
 padding-bottom:1.5rem;
 line-height: 1.5rem;
 }
+.courses-mobile {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .courses {
+    display: none;
+  }
+  .courses-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  .mobile-version {
+    background-color: #d3d3d3;
+    margin:0 1rem 1rem 0.5rem;
+    width: 100%;
+  }
+  .learning {
+    background-color: #fffff0;
+  }
+  .mobile-version h2 {
+    padding: 1rem 0 1.5rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
 
 
 /* Thesis Styles*/
@@ -231,7 +345,22 @@ video {
 .fisma {
   background-color: #d3d3d3;
 }
-
+.banner-video-mobile {
+  display:none;
+}
+@media only screen and (max-width: 480px) {
+  .thesis {
+    display: none;
+  }
+  .banner-video-mobile {
+    display:block;
+    width: 100%;
+    background-color: #fffff0;
+  }
+  .heading {
+    padding-bottom: 1rem;
+  }
+}
 
 /* Footer Styles*/
 footer {
@@ -240,7 +369,7 @@ footer {
   width: 100%;
   justify-content: space-between;
   border-top: 1px solid #d3d3d3;
-  height: 4rem;
+  height: auto;
 }
 footer .text {
   margin: 1rem 1.5rem 0 1.5rem;
@@ -251,4 +380,19 @@ footer .text {
 }
 .policy{
   padding-left: 1rem;
+}
+.right a:hover {
+  color:#48d1cc;
+}
+@media only screen and (max-width: 480px) {
+  .right {
+    display: none;
+  }
+  footer {
+    border-top-style: none;
+  }
+  footer .text {
+    padding: 1rem 0 1rem 0;
+    margin-top: 1.5rem;
+  }
 }
