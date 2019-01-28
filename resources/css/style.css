@@ -49,6 +49,9 @@ html {
 .hidden-menu {
   display:none;
 }
+.nav-link a:hover{
+  color:#48d1cc;
+}
 @media only screen and (max-width: 480px) {
   .logo {
     display: none;
@@ -65,6 +68,10 @@ html {
   }
   .hidden-menu img{
     height: 3.5rem;
+  }
+  .hidden-menu img:hover{
+    transition: background-color, 1.5s;
+    background-color:#48d1cc;
   }
 }
 
@@ -293,12 +300,13 @@ line-height: 1.5rem;
     margin-top: 1rem;
     padding-bottom: 2rem;
     width: 100%;
+
     border-bottom: 1px solid #d3d3d3;
   }
   .mobile-version {
     background-color: #d3d3d3;
-    margin:0 1rem 1rem 0.5rem;
-    width: 100%;
+    margin:0 1rem 0.5rem 1rem;
+    width: auto;
   }
   .learning {
     background-color: #fffff0;
@@ -307,6 +315,7 @@ line-height: 1.5rem;
     padding: 1rem 0 1.5rem 1rem;
     font-size: 2rem;
     font-weight: bold;
+    margin-right: 1rem;
   }
 }
 
